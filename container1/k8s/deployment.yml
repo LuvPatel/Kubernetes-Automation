@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: app1-deployment
+  labels:
+    app: app1
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: app1
+  template:
+    metadata:
+      labels:
+        app: app1
+    spec:
+      containers:
+      - name: app1-container
+        image: us-docker.pkg.dev/kubernetes-project-428618/kubernetes-assignment/app1:latest
+        volumeMounts:
+        - mountPath: /luv_PV_dir
+          name: standard-volume
+      volumes:
+      - name: standard-volume
+        persistentVolumeClaim:
+          claimName: standard-rwo-pvc
