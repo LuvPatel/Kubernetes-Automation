@@ -17,6 +17,7 @@ This project illustrates the understanding of Google Cloud Platform (GCP) using 
 
 To get started with this project, kindly follow the video provided below.
 
-[![Watch the video](https://raw.githubusercontent.com/LuvPatel/Kubernetes-Automation/main/Dalhousie.jpg)](https://raw.githubusercontent.com/LuvPatel/Kubernetes-Automation/main/Kubernetes_Demonstration.mp4)
+
+https://github.com/user-attachments/assets/d5180ce0-07dc-4656-936d-23cd1a3c12ec
 
 
