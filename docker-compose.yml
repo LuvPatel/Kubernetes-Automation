@@ -1,0 +1,25 @@
+services:
+  location-service:
+    build:
+      context: ./container1
+    image: luvpatel/kubernetes-container1
+    ports:
+      - "6000:6000"
+    volumes:
+     - .:/etc/data
+    networks:
+      - custom-networks
+    container_name: container1
+
+  temperature-service:
+    build:
+      context: ./container2
+    image: luvpatel/kubernetes-container2
+    volumes:
+     - .:/etc/data
+    networks:
+      - custom-networks
+    container_name: container2
+networks:
+  custom-networks:
+    name: app-network
