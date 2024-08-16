@@ -30,7 +30,7 @@ Lets go over the Terraform Script now:
 
 ```
 resource "google_container_cluster" "k8s-cluster" {
-      name     = "k8s-cluster"
+      name     = CLUSTER_NAME
       location = var.location
     
       initial_node_count = var.node_count
